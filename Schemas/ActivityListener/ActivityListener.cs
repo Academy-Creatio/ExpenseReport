@@ -12,7 +12,7 @@ using Terrasoft.Core.Entities.Events;
 namespace ExpenseReportStart 
 {
     [EntityEventListener(SchemaName = "Activity")]
-    class Activity_EventListener : BaseEntityEventListener
+    class ActivityListener : BaseEntityEventListener
     {
         private static readonly ILog _log = LogManager.GetLogger("TrainingLogger");
         private static readonly Guid activityType = Guid.Parse("FBE0ACDC-CFC0-DF11-B00F-001D60E938C6");//Task
@@ -34,19 +34,20 @@ namespace ExpenseReportStart
 
             if (!entity.IsChangeInteresting(InterestingColumns)) return;
 
-            //if (CountOverlappingActivitiesSelect(entity) != 0)
+            if (CountOverlappingActivitiesSelect(entity) != 0)
+            {
+                e.IsCanceled = true;
+                string message = entity.GetLocalizableString("OverlappingActivitiesFoundMessage", GetType().Name);
+                _log.Info(message);
+                MsgChannelUtilities.PostMessage(UserConnection, GetType().Name, message);
+            }
+
+            //if (CountOverlappingActivityEsq(entity) != 0)
             //{
             //    e.IsCanceled = true;
             //    string message = entity.GetLocalizableString("OverlappingActivitiesFoundMessage", GetType().Name);
             //    MsgChannelUtilities.PostMessage(UserConnection, GetType().Name, message);
             //}
-
-            if (CountOverlappingActivityEsq(entity) != 0)
-            {
-                e.IsCanceled = true;
-                string message = entity.GetLocalizableString("OverlappingActivitiesFoundMessage", GetType().Name);
-                MsgChannelUtilities.PostMessage(UserConnection, GetType().Name, message);
-            }
 
 
         }
