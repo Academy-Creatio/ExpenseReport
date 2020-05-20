@@ -1,0 +1,24 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "SourceCodeSchemaManager",
+      "UId": "5c91b68b-9912-4959-8b6d-eeade46971c3",
+      "A2": "ActivityListener",
+      "A5": "be4d4c81-5632-412f-bcb0-9bd94d201321",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "7c50c4bc-1952-4116-baec-1bc56ad3d30e",
+          "A2": "OverlappingActivitiesFoundMessage",
+          "A3": "5c91b68b-9912-4959-8b6d-eeade46971c3",
+          "A4": "5c91b68b-9912-4959-8b6d-eeade46971c3",
+          "A5": "be4d4c81-5632-412f-bcb0-9bd94d201321"
+        }
+      ],
+      "B3": [],
+      "B6": "b877df7f-db2d-408d-bb45-0f5899de7334",
+      "B8": "7.16.0.4461",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3"
+    }
+  }
+}
