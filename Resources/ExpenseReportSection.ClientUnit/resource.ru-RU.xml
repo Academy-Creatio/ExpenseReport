@@ -2,7 +2,8 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Section schema: &quot;Expense Report&quot;" />
+			<Item Name="Caption" Value="Схема раздела: &quot;Авансовый Отчет&quot;" />
+			<Item Name="LocalizableStrings.Caption.Value" Value="Авансовый Отчет" />
 		</Items>
 	</Group>
 </Resources>
