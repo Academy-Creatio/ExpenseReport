@@ -9,7 +9,7 @@
 
 
 
-Day 3  [Foreign Exchange]{gFX} is here
+Day 3  [Foreign Exchange][gFX] is here
 
 
 <!-- Named Video Links -->
