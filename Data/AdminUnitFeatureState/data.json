@@ -1,0 +1,26 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "631177f9-f983-4787-a7aa-ced1b24ba918",
+          "Value": "dd7f0ff7-98db-4e0e-a7ed-26dd18d6fa8b",
+          "DisplayValue": "Search Overlapping Activities"
+        },
+        {
+          "SchemaColumnUId": "82b72e0d-42a3-4857-8445-0279b66e7e2c",
+          "Value": 1
+        },
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "24457fbe-d75c-4576-969f-8eea4b579639"
+        },
+        {
+          "SchemaColumnUId": "9ba728be-e5cd-451d-a74a-c4a047c374b3",
+          "Value": "7f3b869f-34f3-4f20-ab4d-7480a5fdf647",
+          "DisplayValue": "Supervisor"
+        }
+      ]
+    }
+  ]
+}

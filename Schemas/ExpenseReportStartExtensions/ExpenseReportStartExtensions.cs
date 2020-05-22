@@ -56,6 +56,20 @@ namespace ExpenseReportStart
             return Id;
         }
 
+        //Currency 
+        public static string FindValueById<Entity>(this Entity entity, string RootSchemName, Guid id, string searchColumn)
+            where Entity : Terrasoft.Core.Entities.Entity
+        {
+            Select select = new Select(entity.UserConnection)
+                .Top(1)
+                .Column(searchColumn)
+                .From(RootSchemName)
+                .Where("Id").IsEqual(Column.Parameter(id)) as Select;
+            string result = select.ExecuteScalar<string>();
+            return result;
+        }
+
+
         public static string GetLocalizableString<Entity>(this Entity entity, string resourceName, string schemaName) where Entity : Terrasoft.Core.Entities.Entity
         {
             var localizableString = string.Format("LocalizableStrings.{0}.Value", resourceName);

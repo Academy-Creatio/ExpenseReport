@@ -9,6 +9,17 @@
 			<Item Name="Columns.ReportDate.Caption" Value="Report Date" />
 			<Item Name="Columns.Status.Caption" Value="Status" />
 			<Item Name="Columns.Total.Caption" Value="Total" />
+			<Item Name="EventsProcessSchema.BaseElements.ConditionalSequenceFlow1_1d73955f01984e4b9a06a6dd64ca8b62.Caption" Value="Code is Empty" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask3_ce98c8b04aa942fbab877d452a197345.Caption" Value="Get Entity" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask4_3a738b4f24f4437b9250018f3a2ea7e7.Caption" Value="Save number" />
+			<Item Name="EventsProcessSchema.BaseElements.UserTask1.Caption" Value="Generate ordinal number" />
+			<Item Name="EventsProcessSchema.BaseElements.UserTask1.Parameters.EntitySchema.Caption" Value="EntitySchema" />
+			<Item Name="EventsProcessSchema.BaseElements.UserTask1.Parameters.ResultCode.Caption" Value="ResultCode" />
+			<Item Name="EventsProcessSchema.Caption" Value="Expense Report" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_d4fb0ec8e6e4498daf706837d8e60508.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_d4fb0ec8e6e4498daf706837d8e60508.Lanes.Lane_cc4d687d46fa43e2847b2558d7ec756a.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.Parameters.DcmEntityUtil.Caption" Value="DcmEntityUtil" />
+			<Item Name="EventsProcessSchema.Parameters.ProcessSchemaListeners.Caption" Value="ProcessSchemaListeners" />
 		</Items>
 	</Group>
 </Resources>
