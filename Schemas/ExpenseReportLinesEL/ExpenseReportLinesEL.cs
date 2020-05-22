@@ -1,14 +1,8 @@
 using Common.Logging;
-using FastReport.Utils;
 using ForeignExchange;
-using ServiceStack.Common.Web;
 using System;
 using System.Threading.Tasks;
-using Terrasoft.Common;
-using Terrasoft.Configuration;
 using Terrasoft.Core;
-
-using Terrasoft.Core.DB;
 using Terrasoft.Core.Entities;
 using Terrasoft.Core.Entities.Events;
 
@@ -18,11 +12,8 @@ namespace ExpenseReportStart
     [EntityEventListener(SchemaName = "ExpenseReportLines")]
     class ExpenseReportLinesEL : BaseEntityEventListener
     {
-        private UserConnection UserConnection;
+        //private UserConnection UserConnection;
         private static readonly ILog _log = LogManager.GetLogger("TrainingLogger");
-
-
-
 
         public override void OnSaving(object sender, EntityBeforeEventArgs e)
         {
@@ -35,22 +26,19 @@ namespace ExpenseReportStart
             _log.Info($"Old Value:{descOld}\tNew Value:{descNew}");
         }
 
-
         public override void OnSaved(object sender, EntityAfterEventArgs e)
         {
 
             base.OnSaved(sender, e);
             Entity entity = (Entity)sender;
-            UserConnection = entity.UserConnection;
+            //UserConnection = entity.UserConnection;
 
             var amountFC = entity.GetTypedColumnValue<decimal>("AmountFC");
             var date = entity.GetTypedColumnValue<DateTime>("TransactionDate");
             var currencyId = entity.GetTypedColumnValue<Guid>("CurrencyId");
-            string shortCurrency = entity.FindValueById("Currency", currencyId, "ShortName");
-
+            string shortCurrency = entity.FindValueById<string>("Currency", currencyId, "ShortName");
 
             IBank ibank = BankFactory.GetBank(BankFactory.SupportedBanks.BOC);
-
             IBankResult result = null;
 
             Task.Run(async () =>

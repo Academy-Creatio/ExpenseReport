@@ -56,20 +56,43 @@ namespace ExpenseReportStart
             return Id;
         }
 
-        //Currency 
-        public static string FindValueById<Entity>(this Entity entity, string RootSchemName, Guid id, string searchColumn)
-            where Entity : Terrasoft.Core.Entities.Entity
+        /// <summary>
+        /// Uses Select to Find value by Id
+        /// </summary>
+        /// <typeparam name="T">Return Type</typeparam>
+        /// <param name="RootSchemName">Table to search</param>
+        /// <param name="Id">Record Id</param>
+        /// <param name="SearchColumn">Column to return</param>
+        /// <example>
+        /// <returns></returns>
+        public static T FindValueById<T>(this Entity entity, string RootSchemName, Guid Id, string SearchColumn)
+            //where Entity : Terrasoft.Core.Entities.Entity 
+            where T : IConvertible
         {
             Select select = new Select(entity.UserConnection)
                 .Top(1)
-                .Column(searchColumn)
+                .Column(SearchColumn)
                 .From(RootSchemName)
-                .Where("Id").IsEqual(Column.Parameter(id)) as Select;
-            string result = select.ExecuteScalar<string>();
+                .Where("Id").IsEqual(Column.Parameter(Id)) as Select;
+            var result = select.ExecuteScalar<T>();
             return result;
         }
 
-
+        /// <summary>
+        /// Uses Select to Find value by Id <see cref="Terrasoft.Core.DB.Select"/>
+        /// </summary>
+        /// <example>
+        /// Get currency short name by Id
+        /// <code>
+        /// string shortCurrency = entity.FindValueById<string>("Currency", currencyId, "ShortName");
+        /// </code>
+        /// </example>
+        /// <typeparam name="T">Return Type</typeparam>
+        /// <param name="entity"></param>
+        /// <param name="RootSchemName">Table to Search</param>
+        /// <param name="Id">Id to Search</param>
+        /// <param name="SearchColumn">Return Column</param>
+        /// <returns>value of T found in SearchColumn by Id</returns>
         public static string GetLocalizableString<Entity>(this Entity entity, string resourceName, string schemaName) where Entity : Terrasoft.Core.Entities.Entity
         {
             var localizableString = string.Format("LocalizableStrings.{0}.Value", resourceName);

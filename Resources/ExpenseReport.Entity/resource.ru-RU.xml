@@ -2,6 +2,13 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Авансовый Отчет" />
+			<Item Name="Columns.Contact.Caption" Value="Контакт" />
+			<Item Name="Columns.Name.Caption" Value="Название" />
+			<Item Name="Columns.Notes.Caption" Value="Комментарий" />
+			<Item Name="Columns.ReportDate.Caption" Value="День отчета" />
+			<Item Name="Columns.Status.Caption" Value="Состояние" />
+			<Item Name="Columns.Total.Caption" Value="Сумма" />
 			<Item Name="EventsProcessSchema.Caption" Value="Базовый объект" />
 		</Items>
 	</Group>
