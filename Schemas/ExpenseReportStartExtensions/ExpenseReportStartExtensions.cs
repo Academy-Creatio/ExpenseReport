@@ -78,21 +78,6 @@ namespace ExpenseReportStart
             return result;
         }
 
-        /// <summary>
-        /// Uses Select to Find value by Id <see cref="Terrasoft.Core.DB.Select"/>
-        /// </summary>
-        /// <example>
-        /// Get currency short name by Id
-        /// <code>
-        /// string shortCurrency = entity.FindValueById<string>("Currency", currencyId, "ShortName");
-        /// </code>
-        /// </example>
-        /// <typeparam name="T">Return Type</typeparam>
-        /// <param name="entity"></param>
-        /// <param name="RootSchemName">Table to Search</param>
-        /// <param name="Id">Id to Search</param>
-        /// <param name="SearchColumn">Return Column</param>
-        /// <returns>value of T found in SearchColumn by Id</returns>
         public static string GetLocalizableString<Entity>(this Entity entity, string resourceName, string schemaName) where Entity : Terrasoft.Core.Entities.Entity
         {
             var localizableString = string.Format("LocalizableStrings.{0}.Value", resourceName);
