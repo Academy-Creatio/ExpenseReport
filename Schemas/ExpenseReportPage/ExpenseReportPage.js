@@ -2,6 +2,13 @@ define("ExpenseReportPage", [], function() {
 	return {
 		entitySchemaName: "ExpenseReport",
 		attributes: {},
+		messages: {
+        	//Published on ExpenseReportLinesDetail
+        	"somethingChanged": {
+        		mode: this.Terrasoft.MessageMode.PTP,
+        		direction: this.Terrasoft.MessageDirectionType.SUBSCRIBE
+        	}
+        },
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{
 			"Files": {
@@ -22,7 +29,40 @@ define("ExpenseReportPage", [], function() {
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		methods: {
+			init: function(){
+				this.callParent(arguments);
+				this.sandbox.subscribe("somethingChanged", function(){
+					this.calculateSum();
+				}, this, ["THIS_IS_MY_TAG"]);
+			},
+			calculateSum: function(){
+				var recordId = this.$Id;
+				var esq = this.Ext.create(
+					"Terrasoft.EntitySchemaQuery", {
+						rootSchemaName: "ExpenseReportLines"
+					}
+				);
+				esq.addColumn("AmountHC");
+				esq.addColumn("AmountFC");
+				
+				var esqFirstFilter = esq.createColumnFilterWithParameter(Terrasoft.ComparisonType.EQUAL, "ExpenseReport", recordId);
+				esq.filters.add("esqFirstFilter", esqFirstFilter);
+
+				var sumHC = 0;
+				var sumFC = 0;
+
+				esq.getEntityCollection(function (result) {
+					if (result.success) {
+						result.collection.each(function (item) {
+							sumHC = sumHC+item.values.AmountHC;
+							sumFC = sumFC+item.values.AmountFC;
+						});
+						this.set("Total", sumHC.toFixed(2));
+					}
+				}, this);
+			}
+		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{

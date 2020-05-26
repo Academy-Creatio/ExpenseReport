@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Expense Report&quot;" />
+			<Item Name="LocalizableStrings.MyMessage.Value" Value="My Message in French" />
 		</Items>
 	</Group>
 </Resources>

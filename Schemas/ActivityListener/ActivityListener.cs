@@ -7,6 +7,8 @@ using Terrasoft.Core;
 using Terrasoft.Core.DB;
 using Terrasoft.Core.Entities;
 using Terrasoft.Core.Entities.Events;
+using Terrasoft.Core.Factories;
+using Training2API;
 
 
 namespace ExpenseReportStart 
@@ -25,6 +27,11 @@ namespace ExpenseReportStart
 
         public override void OnSaving(object sender, EntityBeforeEventArgs e)
         {
+
+            var myClass = ClassFactory.Get<ICustomLogic>();
+            var myInt = myClass.SumNum(10, 20);
+
+
             base.OnSaving(sender, e);
             Entity entity = (Entity)sender;
             UserConnection = entity.UserConnection;

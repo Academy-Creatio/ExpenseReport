@@ -4,32 +4,7 @@ define("ExpenseReportLinesPage", [], function() {
 		attributes: {},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
-		businessRules: /**SCHEMA_BUSINESS_RULES*/{
-			"Description": {
-				"MakeDescriptionRequired": {
-					"uId": "83443dd1-e101-4b4d-b481-3d7456d6b7c0",
-					"enabled": true,
-					"removed": false,
-					"ruleType": 0,
-					"property": 2,
-					"logical": 0,
-					"conditions": [
-						{
-							"comparisonType": 7,
-							"leftExpression": {
-								"type": 1,
-								"attribute": "AmountHC"
-							},
-							"rightExpression": {
-								"type": 0,
-								"value": 100,
-								"dataValueType": Terrasoft.DataValueType.FLOAT
-							}
-						}
-					]
-				}
-			}
-		}/**SCHEMA_BUSINESS_RULES*/,
+		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[

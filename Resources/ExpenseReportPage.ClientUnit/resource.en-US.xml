@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Expense Report&quot;" />
 			<Item Name="LocalizableStrings.FinancialDetailsTabCaption.Value" Value="FINANCIAL DETAILS" />
+			<Item Name="LocalizableStrings.MyMessage.Value" Value="This is my first loc Message" />
 		</Items>
 	</Group>
 </Resources>
