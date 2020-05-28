@@ -8,6 +8,7 @@
 | Day 3  | [Link][d3Link]  |[Link][p3Link]  |
 | Day 4  | [Link][d4Link]  |[Link][p4Link]  |
 | Day 5  | [Link][d5Link]  |[Link][p5Link]  |
+| Day 6  | [Link][d6Link]  |[Link][p6Link]  |
 
 Day 3  [Foreign Exchange][gFX] is here
 
@@ -27,6 +28,9 @@ Day 3  [Foreign Exchange][gFX] is here
 
 [p5Link]: https://us02web.zoom.us/rec/play/uJElIuypqTs3T9GUtwSDC6V6W46_JqKs1SFPqfMLmEfnVnRQZAGiMuYaZuLopJtN2Gme4Ze44y-P5v-Y
 [d5Link]: https://us02web.zoom.us/rec/download/uJElIuypqTs3T9GUtwSDC6V6W46_JqKs1SFPqfMLmEfnVnRQZAGiMuYaZuLopJtN2Gme4Ze44y-P5v-Y
+
+[p6Link]: https://us02web.zoom.us/rec/play/tZd7f-H7_D03TNTB4gSDV_ArW46_K6-sgShL__EImhm8AXEBNVv0ZLMUZbGtdA3pDeXOawBMwS_11MyZ
+[d6Link]: https://us02web.zoom.us/rec/download/tZd7f-H7_D03TNTB4gSDV_ArW46_K6-sgShL__EImhm8AXEBNVv0ZLMUZbGtdA3pDeXOawBMwS_11MyZ
 
 
 <!--Names Reference Libraries -->
