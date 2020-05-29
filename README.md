@@ -1,6 +1,7 @@
 # ExpenseReport
  Development Training May 19-29, 2020
 
+## PLEASE NOTE THAT THE VIDEO RECORDINGS WILL BE AUTOMATICALLY DELETED AFTER 21 DAYS FROM THE DAY OF POST
 | Day  | Download | Play |
 |:--------:|:------- |:-----:|
 | Day 1  | [Link][d1Link]  |[Link][p1Link]  |
@@ -12,11 +13,22 @@
 | Day 7  | [Link][d7Link]  |[Link][p7Link]  |
 | Day 8  | [Link][d8Link]  |[Link][p8Link]  |
 
-Day 3  [Foreign Exchange][gFX] is here
-Wiki material is available [here][wiki]
+- Day 1 **[Starting Package][startingPackage]**
+- Day 3 **[Foreign Exchange][gFX]** library
+- Wiki material is available **[here][wiki]**
 
 
-## PLEASE NOT THAT THE VIDEO RECORDINGS WILL BE AUTOMATICALLY DELETED AFTER 21 DAYS FROM THE DAY OF POST
+<br/><br/>
+
+***Please feel free to address your questions to me directly***  
+**Kirill Krylov, CPA**  
+[k.krylov@creatio.com][email]  
+<br/>
+<img src="https://github.com/kirillkrylov/ImagesAndPages/wiki/Img/kirill.jpg" width="70">  
+<a href="https://www.linkedin.com/in/kirill-krylov-cpa/">
+    <img src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/01-dsk-e8-v2.png.original.png" width="70">
+</a>  
+
 <!-- Named Video Links -->
 [p1Link]: https://us02web.zoom.us/rec/play/tZYkI-z-_Wk3GNbEuQSDBvcrW9S0f_qs0nBKqPBezBq1BiJQY1D0NOcRNrbv6XtTV-r_W-zcT-b2sbCf
 [d1Link]: https://us02web.zoom.us/rec/download/tZYkI-z-_Wk3GNbEuQSDBvcrW9S0f_qs0nBKqPBezBq1BiJQY1D0NOcRNrbv6XtTV-r_W-zcT-b2sbCf
@@ -43,6 +55,14 @@ Wiki material is available [here][wiki]
 [d8Link]: https://us02web.zoom.us/rec/download/vJYsdruhrjs3TNWX5ASDVvArW426fams0CRMq_cPykjhUngLYQCvNeAUNuNYKF79tXxG6Z93i_DSQNdD
 
 
+
+
+
 <!--Names Reference Libraries -->
 [gFx]: https://github.com/Academy-Creatio/ForeignExchange
 [wiki]: https://github.com/Academy-Creatio/TrainingProgramm/wiki
+[email]: mailto:k.krylov@creatio.com?subject=Guided%20Learning%20May%2019-29,%202020
+[startingPackage]: https://github.com/kirillkrylov/ExpenseReportStart
+
+[linkedIn]: https://www.linkedin.com/in/kirill-krylov-cpa/
+[profileImage]: https://github.com/kirillkrylov/ImagesAndPages/wiki/Img/kirill.jpg
