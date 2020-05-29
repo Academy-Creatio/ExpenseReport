@@ -9,10 +9,14 @@
 | Day 4  | [Link][d4Link]  |[Link][p4Link]  |
 | Day 5  | [Link][d5Link]  |[Link][p5Link]  |
 | Day 6  | [Link][d6Link]  |[Link][p6Link]  |
+| Day 7  | [Link][d7Link]  |[Link][p7Link]  |
+| Day 8  | [Link][d8Link]  |[Link][p8Link]  |
 
 Day 3  [Foreign Exchange][gFX] is here
+Wiki material is available [here][wiki]
 
 
+## PLEASE NOT THAT THE VIDEO RECORDINGS WILL BE AUTOMATICALLY DELETED AFTER 21 DAYS FROM THE DAY OF POST
 <!-- Named Video Links -->
 [p1Link]: https://us02web.zoom.us/rec/play/tZYkI-z-_Wk3GNbEuQSDBvcrW9S0f_qs0nBKqPBezBq1BiJQY1D0NOcRNrbv6XtTV-r_W-zcT-b2sbCf
 [d1Link]: https://us02web.zoom.us/rec/download/tZYkI-z-_Wk3GNbEuQSDBvcrW9S0f_qs0nBKqPBezBq1BiJQY1D0NOcRNrbv6XtTV-r_W-zcT-b2sbCf
@@ -32,6 +36,13 @@ Day 3  [Foreign Exchange][gFX] is here
 [p6Link]: https://us02web.zoom.us/rec/play/tZd7f-H7_D03TNTB4gSDV_ArW46_K6-sgShL__EImhm8AXEBNVv0ZLMUZbGtdA3pDeXOawBMwS_11MyZ
 [d6Link]: https://us02web.zoom.us/rec/download/tZd7f-H7_D03TNTB4gSDV_ArW46_K6-sgShL__EImhm8AXEBNVv0ZLMUZbGtdA3pDeXOawBMwS_11MyZ
 
+[p7Link]: https://us02web.zoom.us/rec/play/u5Qrc-isqDk3T9eQ5QSDAP4tW424e6ms0SEe_PdbxR28B3gGN1L3NbIUN7PARRgR6kMSV9pAUZx_atNu
+[d7Link]: https://us02web.zoom.us/rec/download/u5Qrc-isqDk3T9eQ5QSDAP4tW424e6ms0SEe_PdbxR28B3gGN1L3NbIUN7PARRgR6kMSV9pAUZx_atNu
+
+[p8Link]: https://us02web.zoom.us/rec/play/vJYsdruhrjs3TNWX5ASDVvArW426fams0CRMq_cPykjhUngLYQCvNeAUNuNYKF79tXxG6Z93i_DSQNdD
+[d8Link]: https://us02web.zoom.us/rec/download/vJYsdruhrjs3TNWX5ASDVvArW426fams0CRMq_cPykjhUngLYQCvNeAUNuNYKF79tXxG6Z93i_DSQNdD
+
 
 <!--Names Reference Libraries -->
 [gFx]: https://github.com/Academy-Creatio/ForeignExchange
+[wiki]: https://github.com/Academy-Creatio/TrainingProgramm/wiki
